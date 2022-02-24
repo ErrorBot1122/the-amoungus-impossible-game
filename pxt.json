@@ -2,9 +2,7 @@
     "name": "The AMOUNGUS Impossible Game (HL)",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "main.blocks",
