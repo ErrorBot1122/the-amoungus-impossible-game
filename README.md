@@ -1,3 +1,4 @@
+This was for a school assignment ***LOL***
 
 > Open this page at [https://errorbot1122.github.io/the-amoungus-impossible-game/](https://errorbot1122.github.io/the-amoungus-impossible-game/)
 
