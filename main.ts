@@ -1,5 +1,6 @@
 let fails = 0;
 
+// AMOUNGUS
 function playAmoungUs() {
 
     // Intro
@@ -58,6 +59,9 @@ input.onPinPressed(TouchPin.P0, function () {
 
     fails += 1;
 
+    // Clear the screen so the "Press A to start' message dose not brake everything
+    basic.clearScreen();
+
     // Shows an "X" on the screen
     basic.showIcon(IconNames.No);
 
@@ -67,10 +71,13 @@ input.onPinPressed(TouchPin.P0, function () {
 })
 
 input.onButtonPressed(Button.A, function () {
-    
+
     // Reset the 'fails' variable
     fails = 0;
     
+    // Clear the screen so the "Press A to start' message dose not brake everything
+    basic.clearScreen();
+
     // Show the maze
     basic.showLeds(`
         # # # . #
@@ -87,8 +94,12 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(0);
 })
 
+// CHEAT CODE ;)
 input.onButtonPressed(Button.B, function () {
     
+    // Clear the screen so the "Press A to start' message dose not brake everything
+    basic.clearScreen();
+
     fails += -1;
     
     // Show the number of fails on the screen (It is always 0)
@@ -115,9 +126,3 @@ control.inBackground(function () {
 
 // When the program starts, clear the screen
 basic.clearScreen();
-basic.showString("The AMOUNGUS Impossible Game", 100);
-
-while (true) {
-
-    basic.showString("Press Button A Pin 0 to start", 150);
-}
